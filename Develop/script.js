@@ -40,6 +40,12 @@ function generatePassword() {
         console.log(password);
         selectedChars = selectedChars.concat(integers);
       }
+
+      var parameters = getParameters();
+
+      for (i=0; i<parameters.length; i++) {
+        password += 
+      }
       
     } else {
       alert("That's not right! Your password must be between 8 and 128 characters long!")
