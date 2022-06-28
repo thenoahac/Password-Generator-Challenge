@@ -18,7 +18,7 @@ function generatePassword() {
       var checkSpecialChar = confirm("Will your password have special characters in your password?");
       var checkIntegers = confirm("Will your password have integers in your password?");
 
-
+  
       if(checkLowerChar) {
         password = password+lowerChar
         console.log(password);
