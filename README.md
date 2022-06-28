@@ -31,7 +31,7 @@ The use of this page is to allow the user to create a random password with given
 
 ## Site Image
 
-! [Screenshot-1](./Assets/Capture.JPG)
+! [Password-Generator-Site!](https://github.com/thenoahac/Password-Generator-Challenge/blob/main/Assets/Capture.JPG)
 
 ## Credits
 
