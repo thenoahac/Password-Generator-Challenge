@@ -1,4 +1,5 @@
 // Assignment code here
+var generateBtn = document.querySelector("#generate");
 var selectedChars = []
 var length;
 var lowerChar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
@@ -59,8 +60,7 @@ function generatePassword() {
 
 
 
-    // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+    
 
 // Write password to the #password input
 function writePassword() {
