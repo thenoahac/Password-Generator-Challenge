@@ -31,7 +31,7 @@ The use of this page is to allow the user to create a random password with given
 
 ## Site Image
 
-! [Screenshot-1](./assets/screenshots/Capture.png)
+! [Screenshot-1](./Assets/Capture.JPG)
 
 ## Credits
 
