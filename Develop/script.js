@@ -1,12 +1,13 @@
 // Assignment code here
 var selectedChars = []
+var length;
+var lowerChar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var upperChar = ["A","C","D","E","F","G","H","I","J","K","L","M,","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+var specialChar = ["!","@","#","$","%","^","&","*","=","+","?"];
+var integers = ["1","2","3","4","5","6","7","8","9","0"];
 
 function generatePassword() {
-  var password = ""
-  var lowerChar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-  var upperChar = ["A","C","D","E","F","G","H","I","J","K","L","M,","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-  var specialChar = ["!","@","#","$","%","^","&","*","=","+","?"]
-  var integers = ["1","2","3","4","5","6","7","8","9","0"]
+  var password = "";
   var length = prompt("Please enter in a desired password length. \nNo less than 8 and no more than 128 Characters.");
     if (length >= 8 && length <=128){
       console.log(length)
@@ -41,11 +42,11 @@ function generatePassword() {
         selectedChars = selectedChars.concat(integers);
       }
 
-      var parameters = getParameters();
-
-      for (i=0; i<parameters.length; i++) {
-        password += 
+      for (var i=0; i < length; i++) {
+        selectedChars += selectedChars[Math.floor(Math.random() * selectedChars.length)]
       }
+
+      return password;
       
     } else {
       alert("That's not right! Your password must be between 8 and 128 characters long!")
@@ -63,10 +64,10 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+    passwordText.value = password;
 
-  passwordText.value = password;
 
 }
 
